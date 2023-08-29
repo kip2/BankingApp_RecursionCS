@@ -1,0 +1,7 @@
+.bg-blue {
+    background: rgb(6, 67, 121);
+}
+
+.hover:hover {
+    opacity: 0.9;
+}
