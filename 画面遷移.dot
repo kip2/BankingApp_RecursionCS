@@ -1,0 +1,27 @@
+digraph G {
+    Login -> PageTop [label="checked savings"]
+    Login -> PageTop [label="checked checkings"]
+
+    PageTop -> WITHDRAWAL
+    PageTop -> DEPOSIT
+    PageTop -> "COME BACK LATER"
+
+    WITHDRAWAL -> "Please Enter the Withdrawal Amount"
+    "Please Enter the Withdrawal Amount" -> PageTop [label="back button"]
+    "Please Enter the Withdrawal Amount" -> "The money you are going to take is ..."
+    "The money you are going to take is ..." -> "Please Enter the Withdrawal Amount" [label="Go back"]
+    "The money you are going to take is ..." -> PageTop [label="Confirm"]
+
+    DEPOSIT -> "Please Enter The Deposit Amount"
+    "Please Enter The Deposit Amount" -> PageTop
+    "Please Enter The Deposit Amount" -> "The money you are going to deposit is ..."
+    "The money you are going to deposit is ..." -> "Please Enter The Deposit Amount" [label="Go Back"]
+    "The money you are going to deposit is ..." -> PageTop [label="Deposit"]
+
+
+    "COME BACK LATER" -> "How many days will you be gone?"
+    "How many days will you be gone?" -> PageTop [label="Back"]
+    "How many days will you be gone?" -> PageTop [label="Confirm"]
+    
+
+}
