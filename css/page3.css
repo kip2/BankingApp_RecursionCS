@@ -1,0 +1,14 @@
+.bg-blue {
+    background: rgb(6, 67, 121);
+}
+
+.hover:hover {
+    opacity: 0.9;
+}
+
+.money-box {
+    margin: 1 em 0;
+    border: double 5px white;
+    background: #1A4567;
+    color: white;
+}
