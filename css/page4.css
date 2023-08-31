@@ -1,0 +1,22 @@
+.bg-blue {
+    background: rgb(6, 67, 121);
+}
+
+.hover:hover {
+    opacity: 0.9;
+}
+
+.calculation-box {
+    margin: 0.5em 0;
+    padding: 0.5em 0;
+    border: solid 2px white;
+    background: #1A4567;
+    color: white;
+}
+
+.money-board {
+    margin: 1em 0;
+    background: #1A4567;
+    color: white;
+
+}
